@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>intercambio de libros</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="shortcut icon" href="../img/icono4.ico">
+</head>
+<body>
+    <div id="grid"class="gridContacto">
+    <nav id="nav" >
+        <div class="nav1">
+            <a href="../index.html">
+            <img src="../img/icononav.svg" alt="logo de intercambio de libros">
+            </a>
+         <ul>
+            <li>
+                <a href="Promociones.html">Promociones</a>
+            </li>
+            <li>
+                <a href="Novedades.html">Novedades</a>
+            </li>
+            <li>
+                <a href="Nosotros.html">Nosotros</a>
+            </li>
+            <li>
+                <a href="Contacto.html" >Contacto</a>
+            </li>
+            </ul>
+        </div>
+    </nav>
+    <header id="headerContacto">
+        <h1 class="tituloMob"> <Strong> Contacto</Strong></h1>
+    </header>
+<main>
+    <section id="contacto1" class="flexFormulario">
+        <form action="envio.php" class="formulario">
+            <fieldset>
+            <legend> info personal</legend>
+            <label for="nombre" >Nombre:</label>
+            <input type="text" id="nombre" placeholder="Jorman Urbina">
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email"placeholder="mail@mail.com">
+        </fieldset>
+            <fieldset>
+                <legend>info de solicitud</legend>
+                <label for="crear">crear</label>
+                <input type="checkbox" id="crear" value="crear">
+                <label for="intercambiar">intercambiar</label>
+                <input type="checkbox" id="intercambiar" value="intercambiar">
+                <label for="Donar">Donar</label>
+                <input type="checkbox" id="Donar" value="Donar">
+            </fieldset>
+            <fieldset>
+                <legend>Horario disponible</legend>
+                <label for="Mañana">Mañana</label>
+                <input type="radio" id="mañana" value="Mañana" name="Horario">
+                <br>
+                <label for="tarde">Tarde</label>
+                <input type="radio" id="tarde" value="Tarde" name="horario">
+                <br>
+                <label for="localidad">Provincia</label>
+                <select name="" id ="localidad">
+                    <option value="CABA">Ciudad de BS As</option>
+                    <option value="BSAS">Provincia de Bs As</option>
+                    <option value="interior">Interioir del pais</option>
+                </select>
+            </fieldset>
+            <label for="mensaje">Descripcion de solicitud </label>
+            <br>
+            <textarea  id="mensaje" cols="30" rows="10"></textarea>
+            <br>
+            <div class="botonesContacto">
+            <input type="reset" value="cancelar">
+            <input type="submit" value="Enviar">
+            </div>
+
+        </form>
+    </section>
+    
+</main>
+<footer id="footer" class="centrarPie">
+    <a href="https://facebook.com" target="_blank">
+        <img src="../img/logofb1.png" alt="logo de facebook">
+    </a>
+    <a href="https://twitter.com" target="_blank"> 
+        <img src="../img/logotwitter.jpeg"  alt="logo twitter" >
+    </a>
+    <a href="https://coderhouse.com" target="_blank"> 
+        <img src="../img/logocoder.jpeg"  alt="logo coderhouse" >
+    </a>
+</footer>
+</div>
+</body>
+</html>

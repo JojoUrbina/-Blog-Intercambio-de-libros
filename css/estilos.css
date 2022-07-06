@@ -42,6 +42,9 @@ html{
             font-size: 1.2rem;
             margin: auto 0.5rem;                    
             }
+            .nav1 ul li a:hover {
+                color: white;
+            }
 body{
     background-image:url(../img/bodyFondo4.jpg);
     background-attachment: fixed;
@@ -54,11 +57,13 @@ h1,h2{
     color: #898989;
     margin-top: 0.5rem;
     margin-bottom: 3vh;
+
     
 }
 h2 a{
     color: #585858;
     border: outset 3px;
+    text-decoration: none;
 }
 footer{
     display: flex;
@@ -241,14 +246,14 @@ footer img{
     }
     .botonesContacto input{
         width: 40vw;
-    }.botonesContacto input{
         font-size: 1.5vw;
         text-align: center;
 
     }
-
-
-
+    .botonesContacto input:hover{
+        border: inset 1px;
+        
+    }
     .nav1{
         flex-direction: row;
         justify-content: space-between;
@@ -265,6 +270,9 @@ footer img{
     .seccionIndex1 img{
         border: double 4px;
         background-color: #e1e1e16b
+    }
+    .seccionIndex1 img:hover{
+        height: 40vh;
     }
     #nobgColor{
         background-color: transparent;
@@ -290,6 +298,9 @@ footer img{
     }
     /*fin index*/
     /*inicio contacto*/
+    .botonHundir:hover{
+        border: inset 3px;
+    }
 
     
 

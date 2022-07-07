@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Joan&display=swap');
+
+
+
+
+h1,h2{
+    text-align: center;
+    color: #898989;
+    margin-top: 0.5rem;
+    margin-bottom: 3vh;
+
+    
+}
+iframe{
+    height: 50vh;
+}
+h2 a{
+    color: #585858;
+    border: outset 3px;
+    text-decoration: none;
+}
+nav div div ul li a:hover{
+    color: white !important;
+}
+
+.bg-blue{
+    background-color:#2bcac894;
+}
+#botonera img{
+    width: 100px;
+}
+body{
+    background-image:url(../img/bodyFondo4.jpg);
+}
+footer{
+    display: flex;
+    width: 100%;
+    opacity: 60%;
+    background-color: #2bcac8;
+    justify-content: center;
+    align-items: center;
+}
+
+footer img{
+    display: flex;
+    width:3rem;
+    filter: brightness(1.1);
+    mix-blend-mode: multiply;
+    padding: 5px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+@media( min-width:1024px){
+    #col-lg-4-25{
+        width: 25%;
+    }
+    #px-5{
+        padding-left: 3rem!important;
+        padding-right: 3rem!important;
+    }
+    .seccionIndex1 img{
+        border: double 4px;
+        background-color: #e1e1e16b
+    }
+    .seccionIndex1 img:hover{
+        height: 80vh;
+    }
+    .botonHundir:hover{
+        border: inset 3px;
+        color: #624818;
+    }
+
+}

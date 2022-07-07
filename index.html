@@ -1,89 +1,99 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>intercambio de libros</title>
-    <link rel="stylesheet" href="css/estilos.css">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- mi css -->
+    <link rel="stylesheet" href="/css/style.css">
     <link rel="shortcut icon" href="img/icono4.ico">
-</head>
-<body>
-    <div id="grid"class="gridIndex">
-    <nav id="nav">
-        <div class="nav1">
-            <a href="index.html">
-            <img src="img/icononav.svg" alt="logo de intercambio de libros">
-            </a>
-         <ul>
-            <li>
-                <a href="Secciones/Promociones.html">Promociones</a>
+    <title>clase 11</title>
+  </head>
+  <body>
+    <!-- inicia nav -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-blue sticky-lg-top" id="botonera">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="indexBt.html"><img src="img/iconolibrovector.svg" alt="icono intercambio de libros"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link "  href="/Secciones/Promociones.html">Promociones</a>
             </li>
-            <li>
-                <a href="Secciones/Novedades.html">Novedades</a>
+            <li class="nav-item">
+              <a class="nav-link" href="/Secciones/Novedades.html">Novedades</a>
             </li>
-            <li>
-                <a href="Secciones/Nosotros.html">Nosotros</a>
-            </li>
-            <li>
-                <a href="Secciones/Contacto.html" >Contacto</a>
-            </li>
-            </ul>
+            <li class="nav-item">
+                <a class="nav-link" href="/Secciones/Nosotros.html">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/Secciones/Contacto.html">Contacto</a>
+              </li>
+          </ul>
+
         </div>
+      </div>
     </nav>
-    <header id="header">
-        <h1 class="tituloMob">Bienvenido a <Strong> Intercambio De Libros</Strong></h1>
+    <!-- termina nav -->
 
-    </header>
+    <main>
+      <section class="py-3 seccionIndex1">
+        <div class="container-fluid">
+          <h1 class="text-center my-5 ">Bienvenido a Intercambio de libros</h1>
+          <div class="row d-lg-flex justify-content-lg-around">
+            <article id="col-lg-4-25" class="col-sm-12 col-md-6 col-lg-4 ">
+              <img src="/img/escritor512.png" alt="" class="w-100  d-block">
+              <h2><a class="botonHundir hv-white" href="#">Escritor</a></h2>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt nobis, nam eaque fuga officiis debitis atque rem tenetur est porro laboriosam iste autem quaerat illo mollitia ipsa dolorem voluptates magni!
+              Itaque molestias sit veritatis eveniet, saepe provident accusamus sed voluptatum, illum natus dolorum doloremque dignissimos vel. Placeat minima quis totam magni? Minus numquam tenetur dolor fuga quas soluta, animi ex!</p>
+            </article><!-- termina caja 1 -->
+            <article id="col-lg-4-25" class="col-sm-12 col-md-6 col-lg-4">
+              <img src="img/comparte512.png" alt="" class="w-100 d-block">
+              <h2><a class="botonHundir" href="#">Intercambia</a></h2>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt nobis, nam eaque fuga officiis debitis atque rem tenetur est porro laboriosam iste autem quaerat illo mollitia ipsa dolorem voluptates magni!
+              Itaque molestias sit veritatis eveniet, saepe provident accusamus sed voluptatum, illum natus dolorum doloremque dignissimos vel. Placeat minima quis totam magni? Minus numquam tenetur dolor fuga quas soluta, animi ex!</p>
+            </article><!-- termina caja 2 -->
+            <article id="col-lg-4-25" class="col-sm-12 col-md-6 col-lg-4">
+              <img src="/img/dona512.png" alt="#" class="w-100 d-block">
+              <h2><a class="botonHundir" href="#">Dona</a></h2>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt nobis, nam eaque fuga officiis debitis atque rem tenetur est porro laboriosam iste autem quaerat illo mollitia ipsa dolorem voluptates magni!
+              Itaque molestias sit veritatis eveniet, saepe provident accusamus sed voluptatum, illum natus dolorum doloremque dignissimos vel. Placeat minima quis totam magni? Minus numquam tenetur dolor fuga quas soluta, animi ex!</p>
+            </article><!-- termina caja 3 -->
+          </div>
+        </div><!-- termina container -->
+      </section>
+      <section id="px-5" class="py-3 px-0 mb-5">
+        <div class="container-fluid">
+          <div class="row">
+            <article class="col-sm-12 col-md-6 col-lg-6">
+            <iframe  class="w-100 " src="https://www.youtube.com/embed/JhbV26LQUJc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </article><!-- termina caja 1 -->
+            <article class="col-sm-12 col-md-6 col-lg-6">
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt nobis, nam eaque fuga officiis debitis atque rem tenetur est porro laboriosam iste autem quaerat illo mollitia ipsa dolorem voluptates magni!
+              Itaque molestias sit veritatis eveniet, saepe provident accusamus sed voluptatum, illum natus dolorum doloremque dignissimos vel. Placeat minima quis totam magni? Minus numquam tenetur dolor fuga quas soluta, animi ex!</p>
+            </article><!-- termina caja 2 -->
+          </div>
+        </div><!-- termina container -->
+      </section>
 
-    <main id="index">
-        <section id="main1" class="seccionIndex1 figure1">
-            <article>
-                <figure >
-                    <img src="img/escritor512.png"  alt="Describe un escritor">
-                    <figcaption>
-                        <h2 class="textCenter"><a class="botonHundir" href="escritor.com">Escritor</a></h2>  
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus expedita, neque molestias aut velit amet consequuntur provident sapiente dicta ipsam, quisquam temporibus inventore tempora aspernatur a nihil itaque corrupti vero!</p>
-                    </figcaption>
-                </figure>
-            </article>
-            <article>
-                <figure>
-                    <img src="img/comparte512.png" alt="Describe un intercambio de libros">
-                    <figcaption>
-                        <h2 class="subTituloMob textCenter"><a class="botonHundir" href="comparte.com">Comparte</a></h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, voluptatem. Sapiente libero voluptatum, assumenda excepturi distinctio deserunt placeat saepe maiores, fugit commodi tempora beatae cumque, voluptas neque rerum numquam natus?</p>
-                    </figcaption>
-                </figure>
-            </article>
-            <article>
-                <figure >
-                    <img src="img/dona2.png" id="nobgColor" alt="Describe la donacion de libros">
-                        <h2 class="subTituloMob textCenter"><a class="botonHundir" href="dona.com">dona</a></h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum vitae consequuntur aspernatur perferendis, molestiae, eligendi aliquid suscipit dolor officiis porro fugiat expedita itaque, debitis minima animi laudantium beatae. Ex, alias!</p>
-                </figure>
-            </article>
-        </section>
-    
-    <section id="main2" class="sectionVideo">
-        <article class="VideoComentario ">
-            <iframe  width="600" height="300" src="https://www.youtube.com/embed/JhbV26LQUJc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <p class="FLBlanca bgColorBrown">  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat aliquam veniam reiciendis? Neque culpa, eos iste exercitationem vel nihil nemo consequuntur ipsum pariatur delectus consectetur voluptas quod fugiat possimus saepe? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit accusamus reiciendis doloribus. Asperiores, possimus molestias exercitationem vitae dignissimos quibusdam quisquam a, nostrum ipsa at explicabo earum eaque soluta perspiciatis temporibus? <strong>strong</strong> entre otras segun el wireframe</p>
-        </article>
-    
-    </section>
     </main>
-<footer id="footer">
-    <a href="https://facebook.com" target="_blank">
-        <img src="img/logofb1.png" alt="logo de facebook">
-    </a>
-    <a href="https://twitter.com" target="_blank"> 
-        <img src="img/logotwitter.jpeg"  alt="logo twitter" >
-    </a>
-    <a href="https://coderhouse.com" target="_blank"> 
-        <img src="img/logocoder.jpeg"  alt="logo coderhouse" >
-    </a>
-    </footer>
-</div>
-</body>
+    <footer id="footer">
+        <a href="https://facebook.com" target="_blank">
+            <img src="img/logofb1.png" alt="logo de facebook">
+        </a>
+        <a href="https://twitter.com" target="_blank"> 
+            <img src="img/logotwitter.jpeg"  alt="logo twitter" >
+        </a>
+        <a href="https://coderhouse.com" target="_blank"> 
+            <img src="img/logocoder.jpeg"  alt="logo coderhouse" >
+        </a>
+        </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  </body>
 </html>

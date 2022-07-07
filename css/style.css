@@ -11,9 +11,10 @@ h1,h2{
 
     
 }
-iframe{
+#iframeIndex{
     height: 50vh;
 }
+
 h2 a{
     color: #585858;
     border: outset 3px;
@@ -27,7 +28,7 @@ nav div div ul li a:hover{
     background-color:#2bcac894;
 }
 #botonera img{
-    width: 100px;
+    width: 80px;
 }
 body{
     background-image:url(../img/bodyFondo4.jpg);
@@ -50,6 +51,10 @@ footer img{
     margin-right: 20px;
     margin-left: 20px;
 }
+.VideoComentario{
+    border: double 3px;
+    background-color: #ab7c3f63;
+}
 
 @media( min-width:1024px){
     #col-lg-4-25{
@@ -64,11 +69,15 @@ footer img{
         background-color: #e1e1e16b
     }
     .seccionIndex1 img:hover{
-        height: 80vh;
+        height: 50vh;
     }
     .botonHundir:hover{
         border: inset 3px;
         color: #624818;
+    }
+    
+    #iframeNovedades{
+    width: 75% !important;
     }
 
 }

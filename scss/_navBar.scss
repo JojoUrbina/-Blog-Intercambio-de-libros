@@ -1,0 +1,21 @@
+.bg-blue{
+    background-color:#2bcac894;
+}
+nav {
+    div{ 
+        div{ 
+            ul{ 
+                li{
+                    a{ 
+                        &:hover{
+                        color: white !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+#botonera img{
+    width: 80px;
+} 

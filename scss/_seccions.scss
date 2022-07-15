@@ -1,0 +1,42 @@
+#iframeIndex{
+    height: 50vh;
+}
+.VideoComentario{
+    border: double 3px;
+    background-color: #ab7c3f63;
+}
+#col-lg-4-25{
+    @media( min-width:1024px){
+        width: 25%;
+    }
+}
+#px-5{
+    @media( min-width:1024px){
+        padding-left: 3rem!important;
+        padding-right: 3rem!important;
+    }
+}
+.seccionIndex1{
+    img{
+        &:hover{
+            height: 50vh;
+        }
+        @media( min-width:1024px){
+        border: double 4px;
+        background-color: #e1e1e16b;
+        }
+    }
+}
+.botonHundir{
+    @media( min-width:1024px){
+        &:hover{
+            border: inset 3px;
+            color: #624818;
+        }
+    }
+}
+#iframeNovedades{
+    @media( min-width:1024px){
+        width: 75% !important;
+    }
+}

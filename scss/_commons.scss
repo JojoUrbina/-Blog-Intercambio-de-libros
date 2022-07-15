@@ -1,17 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Joan&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Joan&family=Roboto:wght@100&display=swap');
 body{
     background-image:url(../img/bodyFondo4.jpg);
 }
 h1,h2{
     text-align: center;
-    color: #898989;
+    color: $secondayColor;
     margin-top: 0.5rem;
     margin-bottom: 3vh;
 }
 h2{ 
     a{
-    color: #585858;
+    color: $secondayColor;
     border: outset 3px;
     text-decoration: none;
     }    
 }
+
+  

@@ -55,6 +55,15 @@ h2 a {
   #iframeNovedades {
     width: 75% !important; } }
 
+.Promos figcaption {
+  text-align: center; }
+
+.Promos img {
+  height: 50vh !important; }
+
+.novedades img {
+  height: 50vh; }
+
 footer {
   display: flex;
   width: 100%;

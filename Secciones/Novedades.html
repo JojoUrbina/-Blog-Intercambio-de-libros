@@ -1,62 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>intercambio de libros</title>
-    <link rel="stylesheet" href="../css/estilos.css">
-    <link rel="shortcut icon" href="../img/icono4.ico">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<!-- mi css -->
+<link rel="stylesheet" href="../css/estyles.css">
+<link rel="shortcut icon" href="../img/icono4.ico">
+<title>intercambio de libros</title>
 </head>
 <body>
-    <nav>
-        <a href="../index.html">
-            <img src="../img/iconolibrovector.svg" alt="logo de intercambio de libros">
-        </a>
-        <ul>
-            <li>
-                <a href="Promociones.html">Promociones</a>
-            </li>
-            <li>
-                <a href="Novedades.html">Novedades</a>
-            </li>
-            <li>
-                <a href="Nosotros.html">Nosotros</a>
-            </li>
-            <li>
-                <a href="Contacto.html" >Contacto</a>
-            </li>
-        </ul>
+    <!-- inicia nav -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-blue sticky-lg-top" id="botonera">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html"><img src="../img/iconolibrovector.svg" alt="icono intercambio de libros"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link "  href="../Secciones/Promociones.html">Promociones</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../Secciones/Novedades.html">Novedades</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="../Secciones/Nosotros.html">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../Secciones/Contacto.html">Contacto</a>
+                </li>
+            </ul> 
+          </div>
+        </div>
+      </nav>
+      <!-- termina nav -->
     </nav>
     <header >
         <h1 class="textCenter">Cuando comenzo</h1>
     </header>
     <main>
-        <div class="sectionNovedades1">
-            <img src="../img/novedades1.jpg" alt="">
-            <article>
+        <div class="container-fluid py-3">
+            <section class="row " >
+            <article class="d-lg-flex novedades col-sm-12 col-md-6 col-lg-12">
+            <img class="w-100" src="../img/novedades1.jpg" alt="">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore eligendi totam eos ut magnam 
                 placeat <strong> intercambio de libros </strong>
                 accusanti um perspiciatis non inventore incidunt est, praesentium quaerat laborum molestias.
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, enim repellendus. Necessitatibus, praesentium ipsum. Quasi, beatae. Velit, expedita at? Cum cupiditate veniam, quia voluptates debitis ullam voluptate excepturi autem molestiae.
             </p>
             </article>
-        </div>
-        <div class="sectionNovedades2">
-            <article>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore, maiores. Consequuntur molestiae corporis, ad ex saepe, accusantium dicta architecto sint repellendus facere ullam nulla ipsam ipsum, nostrum quas suscipit! Neque.</p>
-            </article>
-            <article class="novedadesImg">
-                <img src="../img/novedades2.webp" alt="">
-                <img src="../img/novedades3.jpg" alt="">
-                <img src="../img/novedades4.webp" alt="">
-            </article>
-            
+            <article class="d-lg-flex  novedades ">
+                <p class="col-sm-12 col-md-6 col-lg-6">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore, maiores. Consequuntur molestiae corporis, ad ex saepe, accusantium dicta architecto sint repellendus facere ullam nulla ipsam ipsum, nostrum quas suscipit! Neque.</p>
+
+                <img class="col-sm-12 col-md-6 col-lg-2" src="../img/novedades2.webp" alt="">
+                <img class="col-sm-12 col-md-6 col-lg-2" src="../img/novedades3.jpg" alt="">
+                <img class=" col-sm-12 col-md-6 col-lg-2" src="../img/novedades4.webp" alt="">
+                
+        </section>
         </div>
 
     </main>
     
-    <footer class="centrarPie">
+    <footer class="fixed-bottom">
         <a href="https://facebook.com" target="_blank">
             <img src="../img/logofb1.png" alt="logo de facebook">
         </a>

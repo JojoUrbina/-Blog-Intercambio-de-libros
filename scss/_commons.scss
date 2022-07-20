@@ -6,7 +6,7 @@ h1,h2{
     text-align: center;
     color: $secondayColor;
     margin-top: 0.5rem;
-    margin-bottom: 3vh;
+    margin-bottom: 2vh;
 }
 h2{ 
     a{
@@ -15,5 +15,8 @@ h2{
     text-decoration: none;
     }    
 }
-
+p{
+    font-family: $roboto;
+    font-weight: map-get($map: $grosorLetras, $key:"mediana") !important;
+}
   

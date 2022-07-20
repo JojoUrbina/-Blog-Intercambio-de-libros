@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<!-- mi css -->
+<link rel="stylesheet" href="../css/estyles.css">
+<link rel="shortcut icon" href="../img/icono4.ico">
+<title>intercambio de libros</title>
+</head>
+<body>
+    <!-- inicia nav -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-blue sticky-lg-top" id="botonera">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html"><img src="../img/iconolibrovector.svg" alt="icono intercambio de libros"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link "  href="../Secciones/Promociones.html">Promociones</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../Secciones/Novedades.html">Novedades</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="../Secciones/Nosotros.html">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../Secciones/Contacto.html">Contacto</a>
+                </li>
+            </ul> 
+          </div>
+        </div>
+      </nav>
+      <!-- termina nav -->
+<main>
+    <div class="container-fluid">
+    <section  class="row d-lg-flex ">
+        <form action="envio.php" class="">
+            <fieldset>
+            <legend> info personal</legend>
+            <label for="nombre" >Nombre:</label>
+            <input type="text" id="nombre" placeholder="Jorman Urbina">
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email"placeholder="mail@mail.com">
+        </fieldset>
+            <fieldset>
+                <legend>info de solicitud</legend>
+                <label for="crear">crear</label>
+                <input type="checkbox" id="crear" value="crear">
+                <label for="intercambiar">intercambiar</label>
+                <input type="checkbox" id="intercambiar" value="intercambiar">
+                <label for="Donar">Donar</label>
+                <input type="checkbox" id="Donar" value="Donar">
+            </fieldset>
+            <fieldset>
+                <legend>Horario disponible</legend>
+                <label for="Mañana">Mañana</label>
+                <input type="radio" id="mañana" value="Mañana" name="Horario">
+                <br>
+                <label for="tarde">Tarde</label>
+                <input type="radio" id="tarde" value="Tarde" name="horario">
+                <br>
+                <label for="localidad">Provincia</label>
+                <select name="" id ="localidad">
+                    <option value="CABA">Ciudad de BS As</option>
+                    <option value="BSAS">Provincia de Bs As</option>
+                    <option value="interior">Interioir del pais</option>
+                </select>
+            </fieldset>
+            <label for="mensaje">Descripcion de solicitud </label>
+            <br>
+            <textarea  id="mensaje" cols="30" rows="10"></textarea>
+            <br>
+            <div class="botonesContacto">
+            <input type="reset" value="Cancelar">
+            <input type="submit" value="Enviar">
+            </div>
+
+        </form>
+    </section>
+</div>
+    
+</main>
+<footer class="fixed-bottom">
+    <a href="https://facebook.com" target="_blank">
+        <img src="../img/logofb1.png" alt="logo de facebook">
+    </a>
+    <a href="https://twitter.com" target="_blank"> 
+        <img src="../img/logotwitter.jpeg"  alt="logo twitter" >
+    </a>
+    <a href="https://coderhouse.com" target="_blank"> 
+        <img src="../img/logocoder.jpeg"  alt="logo coderhouse" >
+    </a>
+</footer>
+</div>
+</body>
+</html>

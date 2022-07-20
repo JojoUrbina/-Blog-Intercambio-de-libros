@@ -7,4 +7,23 @@ $black:#0f0e0e;
 $marron:#ab7c3f63;
 $roboto:'Roboto', sans-serif;
 
+.Portadas{
+    @extend .VideoComentario;
+    &:hover{
+        border: white double 3px ;
+    }
+}
+@mixin personalizarImg($ancho,$largo,$borde){
+    width: $ancho;
+    height: $largo;
+    border: $borde;
 
+}
+.imgIndex{
+    @include personalizarImg(100%,40vh,double 4px $marron)
+}
+$grosorLetras:(
+    "pequeña":1em,
+    "mediana":2vh,
+    "grande":3em,
+);

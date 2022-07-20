@@ -1,0 +1,24 @@
+{
+  "name": "sass1",
+  "version": "1.0.0",
+  "description": "repositorio para practicas en clase, desafíos y proyectos coderhouse",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1","build-css": "node-sass --include-path scss scss/main.scss css/estyles.css",
+		"watch-css": "nodemon -e scss -x \"npm     run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JojoUrbina/repo_001.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JojoUrbina/repo_001/issues"
+  },
+  "homepage": "https://github.com/JojoUrbina/repo_001#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.19"
+  }
+}

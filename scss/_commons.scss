@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Joan&family=Roboto:wght@100&display=swap');
+body{
+    background-image:url(../img/bodyFondo4.jpg);
+}
+h1,h2{
+    text-align: center;
+    color: $secondayColor;
+    margin-top: 0.5rem;
+    margin-bottom: 2vh;
+}
+h2{ 
+    a{
+    color: $secondayColor;
+    border: outset 3px;
+    text-decoration: none;
+    }    
+}
+p{
+    font-family: $roboto;
+    font-weight: map-get($map: $grosorLetras, $key:"mediana") !important;
+}
+  

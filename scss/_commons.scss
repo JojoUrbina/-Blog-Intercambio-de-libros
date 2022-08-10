@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Joan&family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
 body{
     background-image:url(../img/bodyFondo4.jpg);
 }
@@ -16,7 +16,8 @@ h2{
     }    
 }
 p{
-    font-family: $roboto;
+    font-family: $font1;
     font-weight: map-get($map: $grosorLetras, $key:"mediana") !important;
+    color:#4a4a41 ;
 }
   

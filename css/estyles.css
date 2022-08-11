@@ -42,6 +42,9 @@ p {
 h5 {
   color: #90ffb7; }
 
+a {
+  text-decoration: none; }
+
 #iframeIndex {
   height: 50vh; }
 

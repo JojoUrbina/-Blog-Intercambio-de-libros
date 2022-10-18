@@ -1,26 +1,20 @@
-/*function libros(nombre,precio,estado){
-    this.nombre=nombre;
-    this.precio=precio;
-    this.estado=estado;
-}
-const lPrincipito = new libros("el principito",350,"usado");
-const lprincipe = new libros("el principe",1000,"nuevo")
-console.log(lPrincipito)
-console.log(lprincipe)
-*/
+let totalLibro=0;
+const carrito1=[{}]
+
 class libro{
-    constructor(nombre,precio,estado,vendido,stock){
+    constructor(id,nombre,escritor,precio,estado,vendido,stock,srcImg){
+        this.id=parseInt(id)
         this.nombre=nombre.toUpperCase();
+        this.escritor=escritor.toUpperCase();
         this.precio=parseInt(precio);
         this.estado=estado.toLowerCase();
         this.vendido=vendido;
         this.stock=Number(stock)
-
+        this.srcImg=srcImg
     }
     vender(cantidad){
         if(this.stock>cantidad){
             this.stock-=cantidad
-            console.log("quedan restantes "+this.stock)
         }else{
             console.log("no tenemos stock");
             this.vendido=true
@@ -37,8 +31,15 @@ class libro{
     }
 }
 
-let libro1= new libro("el principito",350,"usado",false,10);
-let libro2= new libro("el principe",1300,"nuevo",false,20);
-let libro3= new libro("la insoportable levedad del ser",2300,"nuevo",false,10);
-let libro4= new libro("la culpa la tiene la vaca",600,"usado",false,10)
-console.log(libro1)
+const libro1= new libro(0,"el principito","MILAN KUNDERA",350,"usado",false,10,"../img/elprincipito.jpg");
+const libro2= new libro(1,"el principe","Nicolás Maquiavelo",1300,"nuevo",false,20,"../img/elprincipe.jpg");
+const libro3= new libro(2,"la insoportable levedad del ser","Milan Kundera",2300,"nuevo",false,10,"../img/insoportableLevedad.jpg");
+const libro4= new libro(3,"la culpa la tiene la vaca","jaime lopera",600,"usado",false,10,"../img/culpaVaca1.jpg")
+const misLibros=[libro1,libro2,libro3,libro4]
+//let eleccion = prompt("elija un autor");
+const nuevalista=misLibros.filter(libros=>libros.escritor=="MILAN KUNDERA");
+const nuevaLista=misLibros.find(libros=>libros.escritor=="MILAN KUNDERA");
+console.log(nuevalista)
+console.log(nuevaLista)
+
+// lo ideal es no automatizar tanto y crear funciones para opecariones

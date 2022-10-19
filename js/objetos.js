@@ -39,7 +39,37 @@ const misLibros=[libro1,libro2,libro3,libro4]
 //let eleccion = prompt("elija un autor");
 const nuevalista=misLibros.filter(libros=>libros.escritor=="MILAN KUNDERA");
 const nuevaLista=misLibros.find(libros=>libros.escritor=="MILAN KUNDERA");
-console.log(nuevalista)
-console.log(nuevaLista)
+
+let $iniciaSimulador=document.getElementById("Calcular")
+let $contenedor1=document.getElementById("contenedor1")
+$iniciaSimulador.onclick=function(){
+    alert("funciona")
+}
+
+function crearCarta(){
+    for(elemento of misLibros){
+        $contenedor1.innerHTML+=
+        `<div class="card col-sm-12 col-md-6 col-lg-3" style="width: 16rem;">
+        <img src="${elemento.srcImg}" class="card-img-top " alt="...">
+        <div class="card-body">
+          <h5 class="card-title" style="color:black">${elemento.nombre}</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Escritor: ${elemento.escritor}</li>
+          <li class="list-group-item">Precio: ${elemento.precio}</li>
+          <li class="list-group-item">Estad: ${elemento.estado}</li>
+        </ul>
+        <div class="card-body">
+          <a href="#" class="card-link">Card link</a>
+          <a href="#" class="card-link">Another link</a>
+        </div>
+      </div>
+      `
+      
+    }
+}
+crearCarta()
 
 // lo ideal es no automatizar tanto y crear funciones para opecariones
+console.log($contenedor1)

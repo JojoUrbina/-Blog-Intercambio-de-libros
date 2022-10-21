@@ -76,10 +76,10 @@ crearCarta()
 function agregarACarrito(productoComprado){
     carrito.push(productoComprado)
     console.table(carrito)
-    carrito.forEach(elemento)=>{
-    let total+=elemento.precio;
-    }
+    alert(`producto ${productoComprado.nombre} agregado al carrito `)
+    
 }
+
 console.log(carrito)
 
 

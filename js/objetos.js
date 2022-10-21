@@ -42,8 +42,12 @@ const nuevaLista=misLibros.find(libros=>libros.escritor=="MILAN KUNDERA");
 
 let $iniciaSimulador=document.getElementById("Calcular")
 let $contenedor1=document.getElementById("contenedor1")
+let uno=0;
 $iniciaSimulador.onclick=function(){
-    alert("funciona")
+   let prueba=(prueba=>prueba+=1);
+   
+
+    alert(prueba(uno))
 }
 
 function crearCarta(){
@@ -58,7 +62,7 @@ function crearCarta(){
         <ul class="list-group list-group-flush">
           <li class="list-group-item">Escritor: ${elemento.escritor}</li>
           <li class="list-group-item">Precio: ${elemento.precio}</li>
-          <li class="list-group-item">Estad: ${elemento.estado}</li>
+          <li class="list-group-item">Estado: ${elemento.estado}</li>
         </ul>
         <div class="card-body">
           <a href="#" class="card-link">Card link</a>

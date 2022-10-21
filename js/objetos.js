@@ -77,9 +77,24 @@ function agregarACarrito(productoComprado){
     carrito.push(productoComprado)
     console.table(carrito)
     alert(`producto ${productoComprado.nombre} agregado al carrito `)
-    
+
 }
 
+
+function agregarAlCarrito(productoAComprar){
+    carrito.push(productoAComprar);
+    console.table(carrito);
+    alert("Producto "+productoAComprar.nombre+" agregado al carro!");
+    document.getElementById("tablabody").innerHTML += `
+        <tr>
+            <td>${productoAComprar.id}</td>
+            <td>${productoAComprar.nombre}</td>
+            <td>${productoAComprar.precio}</td>
+        </tr>
+    `;
+    let totalCarrito = carrito.reduce((acumulador,prod)=>acumulador+prod.precio,0);
+    document.getElementById("total").innerText = "Total a pagar $: "+totalCarrito;
+}
 console.log(carrito)
 
 
